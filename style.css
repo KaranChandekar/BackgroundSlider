@@ -65,3 +65,7 @@ body::before {
   transform: translateY(-50%);
   cursor: pointer;
 }
+
+.arrow:focus {
+  outline: 0;
+}

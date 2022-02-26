@@ -14,6 +14,15 @@ rightBtn.addEventListener("click", () => {
   setActiveSlide();
 });
 
+leftBtn.addEventListener("click", () => {
+  activeSlide--;
+  if (activeSlide < 0) {
+    activeSlide = slides.length - 1;
+  }
+  setBgToBody();
+  setActiveSlide();
+});
+
 setBgToBody();
 
 function setBgToBody() {
